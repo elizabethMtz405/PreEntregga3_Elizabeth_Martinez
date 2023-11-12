@@ -1,0 +1,10 @@
+/* INICIA LOS ESTILOS PARA EL PIE DE PAGINA */
+footer{
+    
+    background: $fondoTarjetas;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10PX;
+
+}

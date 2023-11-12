@@ -1,0 +1,221 @@
+:root {
+  --primario: #2e5fff;
+}
+
+nav ul li a {
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+.fondo_Inicio {
+  background-image: url(../img/fondo_arveo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo_Conocenos {
+  background-image: url(../img/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo_Productos {
+  background-image: url(../img/GE-fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* estilos de formulario contactos */
+.formulario div {
+  background: #222222;
+  margin: 10px,20px;
+  padding: 25px;
+}
+
+.formulario button, .formulario textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid #B70E21;
+}
+
+.formulario button {
+  height: 35px;
+  background: #B70E21;
+  text-transform: uppercase;
+}
+
+.formulario .ordenar {
+  padding-right: 120px;
+}
+
+/* INICIA LOS ESTILOS PARA EL PIE DE PAGINA */
+footer {
+  background: rgba(242, 239, 239, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 10PX;
+}
+
+.contenido
+, .contenedor_video
+, .contenido_producto {
+  background: rgba(242, 239, 239, 0.6);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.contenedor_video {
+  margin-top: 60px;
+}
+
+main div .descripcion
+, main div .formulario {
+  color: white;
+}
+
+main .titulo {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fondo_Contenido div h3 {
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.contenido,
+.contenido_producto {
+  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+.product_inicio {
+  background-color: #161416d0;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.product_inicio div {
+  text-align: center;
+}
+
+.product_inicio div h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.product_inicio div p {
+  padding: 15px;
+  color: #f3f2fcd5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #1b3231;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  z-index: 1;
+}
+
+.text_producto{
+  text-align: left;
+}
+
+
+.evento {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.evento :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.evento :nth-child(even) .venta {
+  justify-content: end;
+}
+
+.evento :nth-child(even) .foto ::after {
+  content: "";
+  border: 20px solid transparent;
+  border-right: 20px solid #fff;
+  right: initial;
+  left: -50px;
+}
+
+.venta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: calc(42% + 20px);
+  font-size: 32px;
+  font-weight: normal;
+  color: #DCDFD9;
+}
+
+.foto {
+  width: 42%;
+  border: 10px solid #fff;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+}
+
+.foto ::after {
+  content: "";
+  display: block;
+  border: 20px solid transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  right: -50px;
+  top: calc(50% - 20px);
+}
+
+.foto img {
+  width: 100%;
+  vertical-align: top;
+}
+
+@media (max-width: 1200px) {
+  .ocultarSm {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

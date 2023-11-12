@@ -1,0 +1,26 @@
+
+/* estilos de formulario contactos */
+.formulario {
+    div{
+        background: #222222;
+        margin: 10px,20px;
+        padding: 25px;
+        
+    }
+    button, textarea{
+        width: 100%; 
+        border: none;
+        background: none;
+        outline: 0;
+        color: $colorBlanco;
+        border-bottom: 1px solid $colorRojo; 
+    }
+    button{
+        height: 35px;
+        background: $colorRojo;
+        text-transform: uppercase;
+    }
+    .ordenar{
+        padding-right: 120px;
+    }
+}
